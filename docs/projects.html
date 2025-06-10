@@ -607,6 +607,12 @@
         }
 
         function closeModal(event) {
+            try {
+
+                const url = new URL(window.location.href);
+                url.searchParams.delete('search');
+                window.history.pushState({}, '', url);
+            } catch { }
             const modal = event.target.closest('.containerdivalter');
             modal.classList.remove('show');
             setTimeout(() => {
