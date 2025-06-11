@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="./style/tailwindcss.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -56,8 +57,8 @@
 
             <!-- Navigation -->
             <nav class=" items-center space-x-6 hidden md:flex" id="nav-links">
-                <a href="https://www.transchannels.com/_files/ugd/23e411_71ca618b79f74496905531710735d826.pdf"
-                    target="_blank" class="bg-[#074151] text-white px-4 py-2 rounded-lg ">
+                <a href="./images/Tcc Profile new Design R02.pdf" target="_blank"
+                    class="bg-[#074151] text-white px-4 py-2 rounded-lg " download>
                     Our Profile
                 </a>
                 <a href="./index.html" class=" text-primary hover:text-secend  font-medium">Home</a>
@@ -84,68 +85,75 @@
 
     <main>
         <div class="flex flex-col gap-5 max-w-7xl mx-auto p-4">
-            <h1 class="text-secend text-2xl font-medium">Contact Us
+            <h1 class="text-secend text-2xl font-medium" data-aos="fade-up" data-aos-duration="1200">Contact Us</h1>
+            <h1 class="text-primary font-bold text-4xl" data-aos="fade-up" data-aos-duration="1200"
+                data-aos-delay="100">For Inquiries or
+                Questions
             </h1>
-            <h1 class="text-primary font-bold text-4xl">For Inquiries or Questions
-            </h1>
-            <h4>Please use the form or call us on 920009029
-            </h4>
+            <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">Please use the form or call us on
+                920009029</h4>
         </div>
-        <div class="flex flex-col md:flex-row justify-between max-w-7xl mx-auto  w-full  space-y-4 md:space-y-0 p-4">
-            <div class="w-full md:w-[45%]">
-                <form class="bg-white py-6 gap-5  space-y-4 grid grid-cols-2 ">
+
+        <div class="flex flex-col md:flex-row justify-between max-w-7xl mx-auto w-full space-y-4 md:space-y-0 p-4">
+            <div class="w-full md:w-[45%]" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
+                <form class="bg-white py-6 gap-5 space-y-4 grid grid-cols-2">
                     <div>
-                        <label for="first-name" class="block text-base font-normal text-black/70 tracking-wide ">
-                            First
-                            Name</label>
+                        <label for="first-name" class="block text-base font-normal text-black/70 tracking-wide">
+                            First Name
+                        </label>
                         <input type="text" id="first-name" name="first-name"
-                            class="w-full p-2   outline-none border-b-2 border-solid border-gray-400 focus:border-black duration-300"
+                            class="w-full p-2 outline-none border-b-2 border-solid border-gray-400 focus:border-black duration-300"
                             required>
                     </div>
 
                     <div>
-                        <label for="last-name" class="block text-base font-normal text-black/70 tracking-wide ">
-                            Last Name</label>
+                        <label for="last-name" class="block text-base font-normal text-black/70 tracking-wide">
+                            Last Name
+                        </label>
                         <input type="text" id="last-name" name="last-name"
-                            class="w-full p-2   outline-none border-b-2 border-solid border-gray-400 focus:border-black duration-300"
+                            class="w-full p-2 outline-none border-b-2 border-solid border-gray-400 focus:border-black duration-300"
                             required>
                     </div>
 
                     <div>
-                        <label for="email" class="block text-base font-normal text-black/70 tracking-wide ">
-                            Email *</label>
+                        <label for="email" class="block text-base font-normal text-black/70 tracking-wide">
+                            Email *
+                        </label>
                         <input type="email" id="email" name="email"
-                            class="w-full p-2   outline-none border-b-2 border-solid border-gray-400 focus:border-black duration-300"
+                            class="w-full p-2 outline-none border-b-2 border-solid border-gray-400 focus:border-black duration-300"
                             required>
-
                     </div>
 
                     <div>
-                        <label for="subject" class="block text-base font-normal text-black/70 tracking-wide ">
-                            Subject</label>
+                        <label for="subject" class="block text-base font-normal text-black/70 tracking-wide">
+                            Subject
+                        </label>
                         <input type="text" id="subject" name="subject"
-                            class="w-full p-2   outline-none border-b-2 border-solid border-gray-400 focus:border-black hover:border-black duration-300"
+                            class="w-full p-2 outline-none border-b-2 border-solid border-gray-400 focus:border-black hover:border-black duration-300"
                             required>
                     </div>
 
                     <div class="col-span-2">
-                        <label for="message" class="block mb-5 text-base font-normal text-black/70 tracking-wide ">
-                            Leave us a message...</label>
+                        <label for="message" class="block mb-5 text-base font-normal text-black/70 tracking-wide">
+                            Leave us a message...
+                        </label>
                         <textarea id="message" name="message" rows="6"
-                            class="w-full p-2   outline-none border-2 border-solid border-gray-400 focus:border-black hover:border-black duration-300"
+                            class="w-full p-2 outline-none border-2 border-solid border-gray-400 focus:border-black hover:border-black duration-300"
                             required></textarea>
 
                         <button type="submit"
-                            class="text-center text-secend font-bold text-xl duration-300 uppercase cursor-pointer w-full hover:text-secend/90 mt-5 tracking-wider ">Submit</button>
+                            class="text-center text-secend font-bold text-xl duration-300 uppercase cursor-pointer w-full hover:text-secend/90 mt-5 tracking-wider">Submit</button>
                     </div>
                 </form>
             </div>
 
-            <div class="w-full md:w-[45%] h-1/2 flex justify-center">
-                <img src="./images/concatus.avif" alt="Mobile" class="w-full h-[586px] ">
+            <div class="w-full md:w-[45%] h-1/2 flex justify-center" data-aos="fade-left" data-aos-duration="1200"
+                data-aos-delay="400">
+                <img src="./images/concatus.avif" alt="Mobile" class="w-full h-[586px]">
             </div>
         </div>
     </main>
+
     <div id="loading" class="fixed top-0 left-0 bg-white z-50 w-screen h-screen flex justify-center items-center">
         <div class="relative animate-spin">
             <hr class="border-8 absolute top-[32px] border-white  w-full">
@@ -328,7 +336,10 @@
             </g>
         </svg>
     </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
+        AOS.init();
 
         function toggleMenu() {
             const mobileMenu = document.getElementById("mobile-menu");

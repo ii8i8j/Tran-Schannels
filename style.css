@@ -85,3 +85,28 @@ scale: 1.1;
 .condivimage:hover img {
     scale: 1.1;
 }
+
+.reveal-box {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.reveal-box svg {
+    clip-path: inset(0 100% 0 0);
+    animation: revealRight 2s forwards .5s;
+}
+
+@keyframes revealRight {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+body{
+    overflow-x: hidden;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./style/tailwindcss.css">
     <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -57,8 +59,8 @@
 
             <!-- Navigation -->
             <nav class=" items-center space-x-6 hidden md:flex" id="nav-links">
-                <a href="https://www.transchannels.com/_files/ugd/23e411_71ca618b79f74496905531710735d826.pdf"
-                    target="_blank" class="bg-[#074151] text-white px-4 py-2 rounded-lg ">
+                <a href="./images/Tcc Profile new Design R02.pdf" target="_blank"
+                    class="bg-[#074151] text-white px-4 py-2 rounded-lg " download>
                     Our Profile
                 </a>
                 <a href="./index.html" class=" text-secend   font-medium">Home</a>
@@ -83,14 +85,11 @@
     </header>
     <div class="h-12 bg-black w-full"></div>
 
-
     <main class="md:mb-20 mb-10">
         <!-- section 1 -->
         <section class=" p-8 bg-center bg-cover" style="background-image: url('./images/first.avif'); ">
-
-            <!-- Header Section -->
-            <div class="flex justify-center items-center ">
-                <h1 class=" sm:text-5xl text-4xl font-semibold text-center text-secend">
+            <div class="flex justify-center items-center" data-aos="fade-down" data-aos-duration="1000">
+                <h1 class="sm:text-5xl text-4xl font-semibold text-center text-secend">
                     <span>Trans</span>
                     <span class="text-white">Channels</span>
                     <span class="text-primary">Group</span>
@@ -98,29 +97,31 @@
             </div>
 
             <!-- Subtitle Text -->
-            <div class="text-center mt-3 mb-14">
-                <p class=" font-medium text-therid text-base ">Trans Channels Group founded in 1995.</p>
+            <div class="text-center mt-3 mb-14" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+                <p class="font-medium text-therid text-base">Trans Channels Group founded in 1995.</p>
             </div>
-
             <!-- Content Section with Image and Menu -->
             <div class="flex py-10 w-full h-full relative ">
                 <div class="relative w-1/3 flex justify-end">
                     <div class="absolute -top-1/2 right-0 w-full sm:block hidden">
                         <div
                             class="space-y-6 tracking-[0.1em] sm:flex flex-col relative lg:text-lg text-sm   uppercase font-bold  ">
-                            <div class="my-12 relative">
+                            <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50"
+                                class="my-12 relative">
 
                                 <a href="#"
                                     class="bg-primary  absolute top-0 lg:right-10 md:right-20 right-16 text-white px-3 py-2 rounded-3xl text-center hover:bg-secend transition">Our
                                     Vision</a>
                             </div>
-                            <div class="my-12 relative">
+                            <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0"
+                                class="my-12 relative">
 
                                 <a href="#"
                                     class="bg-primary  absolute top-0 lg:right-16  md:right-24 right-20 text-white px-3 py-2 rounded-3xl text-center hover:bg-secend transition">Our
                                     Vaulas</a>
                             </div>
-                            <div class="my-12 relative">
+                            <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50"
+                                class="my-12 relative">
 
                                 <a href="#"
                                     class="bg-primary  absolute top-0 lg:right-10 md:right-20 right-16  text-white px-3 py-2 rounded-3xl text-center hover:bg-secend transition">Our
@@ -130,7 +131,7 @@
                     </div>
                 </div>
                 <div class=" w-full relative sm:w-1/3">
-                    <div class="md:scale-200 relative scale-150">
+                    <div class="md:scale-200 relative scale-150  reveal-box">
                         <svg height="100%" width="100%">
                             <defs>
                                 <filter x="-30" y="-30" width="448" height="326" filterUnits="userSpaceOnUse"
@@ -192,17 +193,20 @@
                     <div class="absolute -top-1/2 left-0 w-full sm:block hidden">
                         <div
                             class="space-y-6 sm:flex tracking-[0.1em] flex-col relative lg:text-lg text-sm   uppercase font-bold  ">
-                            <div class="my-12 relative ">
+                            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50"
+                                class="my-12 relative ">
 
                                 <a href="#"
                                     class="bg-secend  absolute top-0 lg:left-10 md:left-20 left-16 text-white px-3 py-2 rounded-3xl text-center hover:bg-primary transition">Gallery</a>
                             </div>
-                            <div class="my-12 relative">
+                            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0"
+                                class="my-12 relative">
 
                                 <a href="#"
                                     class="bg-secend    absolute top-0 lg:left-16  md:left-24 left-20 text-white px-3 py-2 rounded-3xl text-center hover:bg-primary transition">Partnerships</a>
                             </div>
-                            <div class="my-12 relative">
+                            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50"
+                                class="my-12 relative">
 
                                 <a href="#"
                                     class="bg-secend  absolute top-0 lg:left-10 md:left-20 left-16 text-white px-3 py-2 rounded-3xl text-center hover:bg-primary transition">clients</a>
@@ -212,88 +216,110 @@
                 </div>
 
             </div>
-
-            <div class="text-center mt-12">
+            <!-- New Section with Animation -->
+            <div class="text-center mt-12" data-aos="fade-up" data-aos-duration="1200">
                 <h1 class="sm:text-3xl text-xl font-bold text-primary">
                     <span class="text-secend">Our</span>
                     <span>Channels</span>
                     <span class="text-secend">Serve</span>
-
                     <span>You</span>
                 </h1>
             </div>
+
         </section>
         <!-- section 1 - 5  -->
         <section class=" sectionbackground pt-10">
             <!-- section 2 -->
-            <div class=" md:h-screen">
+            <div class="md:h-screen">
                 <div class="flex flex-col md:flex-row h-full max-w-7xl w-full mx-auto">
 
-                    <div
-                        class="w-full md:w-[45%]  backgroundgradian md:p-10 p-3 flex flex-col justify-center text-left">
+                    <!-- Left Side (Text Content) -->
+                    <div class="w-full md:w-[45%] backgroundgradian md:p-10 p-3 flex flex-col justify-center text-left"
+                        data-aos="fade-right" data-aos-duration="1200" data-aos-delay="700">
                         <div class="max-w-xl">
                             <hr class="w-10 my-5">
 
                             <h2 class="text-3xl font-bold text-blue-900 mb-4">OUR VISION</h2>
                             <p class="text-gray-700 mb-8 line-clamp-4">
                                 To become one of the leading companies in the fields of constructions in Saudi Arabia,
-                                and Alkhalij region through providing integrated and comprehensive services and
-                                solutions
-                                that would meet the requirements and objectives of our clients.
+                                and Alkhalij
+                                region through providing integrated and comprehensive services and solutions that would
+                                meet the
+                                requirements and objectives of our clients.
                             </p>
                             <hr class="w-10 my-5">
                             <h2 class="text-3xl font-bold text-blue-900 mb-4">OUR MISSION</h2>
                             <p class="text-gray-700 line-clamp-4">
                                 We look forward to setting the modern and cutting-edge standards in Saudi Arabia,
-                                through
-                                an elite group of competent and highly skilled Arabian entrepreneurs, united by the
-                                mission,
-                                driven by inspiration, motivated by competition and passion for presenting a truly
-                                unique
-                                experience to our clients, to attain a long-lasting partnership.
+                                through an elite
+                                group of competent and highly skilled Arabian entrepreneurs, united by the mission,
+                                driven by
+                                inspiration, motivated by competition and passion for presenting a truly unique
+                                experience to our
+                                clients, to attain a long-lasting partnership.
                             </p>
                         </div>
                     </div>
 
-                    <div class="w-full md:max-w-[55%] h-[60vh] md:h-full">
+                    <!-- Right Side (Image) -->
+                    <div class="w-full md:max-w-[55%] h-[60vh] md:h-full" data-aos="fade-left" data-aos-delay="700"
+                        data-aos-duration="1200">
                         <img src="./images/builder.avif" alt="Construction Building"
                             class="object-cover w-full h-full" />
                     </div>
                 </div>
             </div>
             <!-- section 3 -->
-            <div class=" py-5 relative bg-cover">
-                <div class="opacity-10 bg-cover w-full h-full top-0 left-0 absolute z-0 "
+            <div class="py-5 relative bg-cover">
+                <!-- Background Image -->
+                <div class="opacity-10 bg-cover w-full h-full top-0 left-0 absolute z-0"
                     style="background-image: url('./images/section3.avif');"></div>
 
-                <div class="section3 w-full h-full top-0 left-0 absolute z-0 "></div>
-                <div class="max-w-4xl  mx-auto text-center text-white relative z-10">
-                    <h2 class="md:text-3xl text-2xl font-bold mb-4 lg:mb-5 text-secend">OUR VALUES</h2>
+                <!-- Empty div for potential background styling -->
+                <div class="section3 w-full h-full top-0 left-0 absolute z-0"></div>
+
+                <!-- Content Section -->
+                <div class="max-w-4xl mx-auto text-center text-white relative z-10">
+                    <!-- Heading -->
+                    <h2 class="md:text-3xl text-2xl font-bold mb-4 lg:mb-5 text-secend" data-aos="fade-up"
+                        data-aos-duration="1200">
+                        OUR VALUES
+                    </h2>
+
+                    <!-- Values List -->
                     <div
                         class="flex flex-col text-left lg:gap-8 md:gap-4 gap-2 lg:mt-14 md:mt-10 mb-5 mt-5 md:px-5 lg:px-0 px-3">
-                        <div class="text-xl flex items-end gap-1 text-black ">
-                            <p class="text-secend md:text-4xl sm:text-3xl text-2xl font-semibold ">
+                        <!-- Value 1 - Trust -->
+                        <div class="text-xl flex items-end gap-1 text-black" data-aos="fade-up" data-aos-duration="1200"
+                            data-aos-delay="300">
+                            <p class="text-secend md:text-4xl sm:text-3xl text-2xl font-semibold">
                                 <span
-                                    class="text-primary  md:text-5xl sm:text-4xl text-3xl -tracking-wider ">T</span><span>rust</span></span>&nbsp;</span>
+                                    class="text-primary md:text-5xl sm:text-4xl text-3xl -tracking-wider">T</span><span>rust</span>&nbsp;
                             </p>
-                            <p class="font-medium md:text-xl sm:text-lg text-base line-clamp-1">our first concern to
-                                building with clients.</p>
+                            <p class="font-medium md:text-xl sm:text-lg text-base line-clamp-1">Our first concern to
+                                building with
+                                clients.</p>
                         </div>
-                        <div class="text-xl flex items-end gap-1 text-black ">
-                            <p class="text-secend md:text-4xl sm:text-3xl text-2xl font-semibold ">
+
+                        <!-- Value 2 - Trust (Dealing with Clients) -->
+                        <div class="text-xl flex items-end gap-1 text-black" data-aos="fade-up" data-aos-duration="1200"
+                            data-aos-delay="600">
+                            <p class="text-secend md:text-4xl sm:text-3xl text-2xl font-semibold">
                                 <span
-                                    class="text-primary  md:text-5xl sm:text-4xl text-3xl -tracking-wide ">C</span><span>rust</span></span>&nbsp;</span>
+                                    class="text-primary md:text-5xl sm:text-4xl text-3xl -tracking-wide">C</span><span>rust</span>&nbsp;
                             </p>
-                            <p class="font-medium md:text-xl sm:text-lg text-base line-clamp-1">our way dealing with
-                                Clients.
-                            </p>
+                            <p class="font-medium md:text-xl sm:text-lg text-base line-clamp-1">Our way of dealing with
+                                clients.</p>
                         </div>
-                        <div class="text-xl flex items-end gap-1 text-black ">
-                            <p class="text-secend md:text-4xl sm:text-3xl text-2xl font-semibold ">
+
+                        <!-- Value 3 - Grand (Project Performance) -->
+                        <div class="text-xl flex items-end gap-1 text-black" data-aos="fade-up" data-aos-duration="1200"
+                            data-aos-delay="900">
+                            <p class="text-secend md:text-4xl sm:text-3xl text-2xl font-semibold">
                                 <span
-                                    class="text-primary  md:text-5xl sm:text-4xl text-3xl -tracking-wide ">G</span><span>rand</span></span>&nbsp;</span>
+                                    class="text-primary md:text-5xl sm:text-4xl text-3xl -tracking-wide">G</span><span>rand</span>&nbsp;
                             </p>
-                            <p class="font-medium md:text-xl sm:text-lg text-base line-clamp-1">always our performers in
+                            <p class="font-medium md:text-xl sm:text-lg text-base line-clamp-1">Always our performers in
                                 projects.
                             </p>
                         </div>
@@ -302,26 +328,28 @@
             </div>
             <!-- section 4 -->
             <div class="">
-                <div class="flex flex-col md:flex-row   md:h-[35vh] w-full mx-auto">
-                    <div class="w-full md:max-w-1/2 md:h-full h-[20vh]">
+                <div class="flex flex-col md:flex-row md:h-[35vh] w-full mx-auto">
+
+                    <!-- Image Section -->
+                    <div class="w-full md:max-w-1/2 md:h-full h-[20vh]" data-aos="fade-right" data-aos-duration="1200">
                         <img src="./images/section4.avif" alt="Construction Building"
                             class="object-cover w-full h-full" />
                     </div>
-                    <div
-                        class="w-full md:w-1/2 bg-white md:pb-0 pb-5 md:px-10 px-3 flex flex-col justify-center text-left">
+
+                    <!-- Text Section -->
+                    <div class="w-full md:w-1/2 bg-white md:pb-0 pb-5 md:px-10 px-3 flex flex-col justify-center text-left"
+                        data-aos="fade-left" data-aos-duration="1200">
                         <div class="max-w-xl">
                             <h1 class="text-secend font-bold text-2xl md:mt-0 my-4 mb-4">Excellency</h1>
-                            <p class="text-gray-700 sm:text-base text-sm line-clamp-6">We seek perfection in providing
-                                all our
-                                services and
-                                solutions, and
-                                strengthening our
-                                perfection is being the first
-                                pioneering company in the field of construction, along with concentrating on developing
-                                special and exceptional
-                                relations with our clients, not forgetting the diligence of learning and applying
-                                everything new that would enhance the
-                                services provided to our clients.
+                            <p class="text-gray-700 sm:text-base text-sm line-clamp-6">
+                                We seek perfection in providing all our services and solutions, and strengthening our
+                                perfection is
+                                being the first pioneering company in the field of construction, along with
+                                concentrating on
+                                developing special and exceptional relations with our clients, not forgetting the
+                                diligence of
+                                learning and applying everything new that would enhance the services provided to our
+                                clients.
                             </p>
                         </div>
                     </div>
@@ -331,7 +359,8 @@
             <!-- section 5 -->
             <div class="bg-cover bg-center" style="background-image: url('./images/section5.jpg');">
                 <div class="py-14 bg-white/70 ">
-                    <h1 class="text-center text-secend md:text-4xl text-2xl font-medium ">Our Services
+                    <h1 class="text-center text-secend md:text-4xl text-2xl font-medium " data-aos="fade-up"
+                        data-aos-duration="1200">Our Services
                     </h1>
                 </div>
             </div>
@@ -339,16 +368,20 @@
         <!-- section 6 - 8 -->
         <section class="bg-gray-100 lg:py-20 md:py-16 py-10">
             <!-- section 6 -->
-            <div class=" bg-cover bg-center max-w-7xl  mx-auto  "
+            <div class="bg-cover bg-center max-w-7xl mx-auto"
                 style="background-image: url('./images/section\ 6.avif');">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3 h-full max-w-3xl mx-auto">
-                    <div class="bg-white p-6  shadow-md flex flex-col items-center">
+
+                    <!-- First Column - Construction Projects -->
+                    <div class="bg-white p-6 shadow-md flex flex-col items-center" data-aos="fade-up"
+                        data-aos-duration="1200" data-aos-delay="300">
                         <div class="text-center mt-4 text-secend">
                             <div class="flex justify-center items-center">
+                                <!-- Icon SVG -->
                                 <svg preserveAspectRatio="xMidYMid meet" data-bbox="30.968 30.431 138.168 139.139"
                                     viewBox="30.968 30.431 138.168 139.139" height="80" width="80"
                                     xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation"
-                                    aria-hidden="true" aria-label="">
+                                    aria-hidden="true">
                                     <defs>
                                         <style>
                                             #comp-kq9g539d svg [data-color="1"] {
@@ -363,22 +396,22 @@
                                     </g>
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-semibold  underline mt-4">Construction</h3>
-                            <h4 class=" font-bold text-5xl mt-10">
-                                30+
-                            </h4>
-                            <p class="text-base mt-2 tracking-wide mb-10 ">Projects Completed</p>
+                            <h3 class="text-2xl font-semibold underline mt-4">Construction</h3>
+                            <h4 class="font-bold text-5xl mt-10">30+</h4>
+                            <p class="text-base mt-2 tracking-wide mb-10">Projects Completed</p>
                         </div>
                     </div>
 
-                    <!-- Second Column -->
-                    <div class="bg-white p-6  shadow-md flex flex-col items-center">
+                    <!-- Second Column - Steel Hangers -->
+                    <div class="bg-white p-6 shadow-md flex flex-col items-center" data-aos="fade-up"
+                        data-aos-duration="1200" data-aos-delay="500">
                         <div class="text-center mt-4 text-secend">
                             <div class="flex justify-center items-center">
+                                <!-- Icon SVG -->
                                 <svg preserveAspectRatio="xMidYMid meet" data-bbox="33.155 35.068 133.69 129.862"
                                     viewBox="33.155 35.068 133.69 129.862" height="80" width="80"
                                     xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation"
-                                    aria-hidden="true" aria-label="">
+                                    aria-hidden="true">
                                     <defs>
                                         <style>
                                             #comp-kq9g539r1 svg [data-color="1"] {
@@ -393,23 +426,22 @@
                                     </g>
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-semibold  underline mt-4">Steel Hangers projects</h3>
-                            <h4 class=" font-bold text-5xl mt-10">
-                                20+
-                            </h4>
-                            <p class="text-base mt-2 tracking-wide mb-10 ">Projects Completed</p>
+                            <h3 class="text-2xl font-semibold underline mt-4">Steel Hangers projects</h3>
+                            <h4 class="font-bold text-5xl mt-10">20+</h4>
+                            <p class="text-base mt-2 tracking-wide mb-10">Projects Completed</p>
                         </div>
                     </div>
 
-
-                    <!-- Third Column -->
-                    <div class="bg-white p-6  shadow-md flex flex-col items-center">
+                    <!-- Third Column - HVAC Systems -->
+                    <div class="bg-white p-6 shadow-md flex flex-col items-center" data-aos="fade-up"
+                        data-aos-duration="1200" data-aos-delay="700">
                         <div class="text-center mt-4 text-secend">
                             <div class="flex justify-center items-center">
+                                <!-- Icon SVG -->
                                 <svg preserveAspectRatio="xMidYMid meet" data-bbox="35.168 38.873 129.664 122.254"
                                     viewBox="35.168 38.873 129.664 122.254" height="80" width="80"
                                     xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation"
-                                    aria-hidden="true" aria-label="">
+                                    aria-hidden="true">
                                     <defs>
                                         <style>
                                             #comp-kq9g539w svg [data-color="1"] {
@@ -424,11 +456,9 @@
                                     </g>
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-semibold  underline mt-4">HVAC Systems</h3>
-                            <h4 class=" font-bold text-5xl mt-10">
-                                50+
-                            </h4>
-                            <p class="text-base mt-2 tracking-wide mb-10 ">Projects Completed</p>
+                            <h3 class="text-2xl font-semibold underline mt-4">HVAC Systems</h3>
+                            <h4 class="font-bold text-5xl mt-10">50+</h4>
+                            <p class="text-base mt-2 tracking-wide mb-10">Projects Completed</p>
                         </div>
                     </div>
 
@@ -437,15 +467,17 @@
             <!-- Swiper Container -->
             <!-- section 7 -->
             <div class="relative">
-
                 <div class="swiper-container my-4 h-[65vh] max-w-7xl mx-auto overflow-hidden relative"
-                    id="swiperContainer">
-                    <div class="swiper-wrapper   mx-auto ">
-
+                    id="swiperContainer" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="swiper-wrapper mx-auto">
+                        <!-- Add Swiper slides here -->
                     </div>
                 </div>
-                <div id="left-btn"
-                    class="swiper-pagination-left  hidden absolute top-1/2 lg:left-7 xl:left-14 left-4 transform -translate-y-1/2  h-10 w-10 z-10  items-center justify-center text-white">
+
+                <!-- Left Button -->
+                <button id="left-btn"
+                    class="swiper-pagination-left hidden absolute top-1/2 lg:left-7 xl:left-14 left-4 transform -translate-y-1/2 h-10 w-10 z-10 items-center justify-center text-white"
+                    data-aos="fade-left" data-aos-duration="1000">
                     <div class="swiper-pagination cursor-pointer swiper-pagination-clickable swiper-pagination-bullets">
                         <svg class="slideshow-arrow" width="23" height="39" viewBox="0 0 23 39"
                             style="transform: scaleX(-1) scale(0.782609);">
@@ -454,10 +486,12 @@
                             </path>
                         </svg>
                     </div>
-                </div>
+                </button>
 
-                <div id="right-btn"
-                    class="swiper-pagination-right  absolute top-1/2 lg:right-7 xl:right-14 right-4 transform -translate-y-1/2  h-10 w-10 z-10 flex items-center justify-center text-white">
+                <!-- Right Button -->
+                <button id="right-btn"
+                    class="swiper-pagination-right absolute top-1/2 lg:right-7 xl:right-14 right-4 transform -translate-y-1/2 h-10 w-10 z-10 flex items-center justify-center text-white"
+                    data-aos="fade-right" data-aos-duration="1000">
                     <div class="swiper-pagination cursor-pointer swiper-pagination-clickable swiper-pagination-bullets">
                         <svg class="slideshow-arrow" width="23" height="39" viewBox="0 0 23 39"
                             style="transform: scaleX(1) scale(0.782609);">
@@ -466,14 +500,13 @@
                             </path>
                         </svg>
                     </div>
-                </div>
+                </button>
             </div>
             <!-- section 8 -->
-            <div class="container mx-auto lg:pt-20 md:pt-16 pt-10">
+            <div class="max-w-5xl mx-auto lg:pt-20 md:pt-16 pt-10">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
                     <!-- Year of Establishment -->
-                    <div class="flex justify-center items-center">
-
+                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1200">
                         <div class="flex gap-2">
                             <svg preserveAspectRatio="xMidYMid meet" data-bbox="34.5 28 130.999 144"
                                 viewBox="34.5 28 130.999 144" height="80" width="80" xmlns="http://www.w3.org/2000/svg"
@@ -511,11 +544,13 @@
                             </svg>
                             <div class="flex flex-col items-center">
                                 <span class="text-4xl text-primary font-black">1995</span>
-                                <span class="text-lg text-secend tracking-wide font-light">Year of Establishment</span>
+                                <span class="text-base text-secend tracking-wide font-light">Year of
+                                    Establishment</span>
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-center items-center">
+                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="100">
 
                         <div class="flex gap-2">
                             <svg preserveAspectRatio="xMidYMid meet" data-bbox="55.001 28 89.999 144"
@@ -542,11 +577,12 @@
                             </svg>
                             <div class="flex flex-col items-center">
                                 <span class="text-4xl text-primary font-black">30+</span>
-                                <span class="text-lg text-secend tracking-wide font-light">Employees</span>
+                                <span class="text-base text-secend tracking-wide font-light">Employees</span>
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-center items-center">
+                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="200">
                         <div class="flex gap-2">
                             <svg preserveAspectRatio="xMidYMid meet" data-bbox="26 33.811 147.999 132.378"
                                 viewBox="26 33.811 147.999 132.378" height="80" width="80"
@@ -582,12 +618,13 @@
                             </svg>
                             <div class="flex flex-col items-center">
                                 <span class="text-4xl text-primary font-black">100+</span>
-                                <span class="text-lg text-secend tracking-wide font-light">Projects Completed</span>
+                                <span class="text-base text-secend tracking-wide font-light">Projects Completed</span>
                             </div>
 
                         </div>
                     </div>
-                    <div class="flex justify-center items-center">
+                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="300">
                         <div class="flex gap-2">
                             <svg preserveAspectRatio="xMidYMid meet" data-bbox="25.502 49.499 148.998 101.005"
                                 viewBox="25.502 49.499 148.998 101.005" height="80" width="80"
@@ -616,7 +653,7 @@
                             </svg>
                             <div class="flex flex-col items-center">
                                 <span class="text-4xl text-primary font-black">100+</span>
-                                <span class="text-lg text-secend tracking-wide font-light">Clients</span>
+                                <span class="text-base text-secend tracking-wide font-light">Clients</span>
                             </div>
                         </div>
                     </div>
@@ -629,90 +666,126 @@
 
         <div>
             <!-- section 9 -->
-            <div class="container mx-auto   md:pt-10 pt-5">
-                <h1 class="text-secend text-4xl text-center mb-5">Our Partnerships</h1>
+            <div class="max-w-5xl mx-auto md:pt-10 pt-5">
+                <h1 class="text-secend text-4xl text-center mb-5" data-aos="fade-up" data-aos-duration="1200">
+                    Our Partnerships
+                </h1>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                    <!-- Year of Establishment -->
-                    <div class="flex justify-center items-center">
+
+                    <!-- Partnership 1 -->
+                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="100">
                         <div class="flex gap-2">
                             <img src="./images/section 9-1.avif" alt="">
                         </div>
-
                     </div>
-                    <div class="flex justify-center items-center">
+
+                    <!-- Partnership 2 -->
+                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="200">
                         <div class="flex gap-2">
                             <img src="./images/image.png" alt="">
                         </div>
                     </div>
-                    <div class="flex justify-center items-center">
+
+                    <!-- Partnership 3 -->
+                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="300">
                         <div class="flex gap-2">
                             <img src="./images/section 9-3.avif" alt="">
-
                         </div>
                     </div>
-                    <div class="flex justify-center items-center">
+
+                    <!-- Partnership 4 -->
+                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="400">
                         <div class="flex gap-2">
                             <img src="./images/section 9-4.avif" alt="">
-
                         </div>
                     </div>
 
                 </div>
-                <div class="text-center ">
-                    <a href="#"
-                        class="text-primary hover:text-secend duration-500 tracking-wide  font-bold uppercase text-2xl text-center mb-5">More
-                        details</a>
+
+                <div class="text-center" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                    <a href="services.html#Partnerships"
+                        class="text-primary hover:text-secend duration-500 tracking-wide font-bold uppercase text-2xl text-center mb-5">
+                        More details
+                    </a>
                 </div>
             </div>
-            <hr class=" max-w-7xl mx-auto  my-10">
+            <hr class=" max-w-5xl mx-auto  my-10">
             <!-- section 10  -->
-            <div class="container mx-auto   md:pt-10 pt-5">
-                <h1 class="text-secend lg:text-4xl md:text-2xl text-xl text-center mb-3">Our Clients</h1>
-                <p class="lg:text-5xl md:text-4xl text-2xl max-w-4xl mx-auto text-center font-bold text-primary mb-5">We
-                    believe each client is a
-                    long term
-                    partnership
+            <div class="max-w-6xl mx-auto md:pt-10 pt-5">
+                <!-- Heading -->
+                <h1 class="text-secend lg:text-4xl md:text-2xl text-xl text-center mb-3" data-aos="fade-up"
+                    data-aos-duration="1200">
+                    Our Clients
+                </h1>
+
+                <!-- Subheading -->
+                <p class="lg:text-5xl md:text-4xl text-2xl max-w-4xl mx-auto text-center font-bold text-primary mb-5"
+                    data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                    We believe each client is a long-term partnership
                 </p>
-                <div class="grid grid-cols-1   sm:grid-cols-5 gap-6 text-center">
-                    <!-- Year of Establishment -->
-                    <div class="flex justify-center items-center">
+
+                <!-- Clients Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-5 gap-6 text-center">
+                    <!-- Client 1 -->
+                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="200">
                         <div class="flex gap-2">
                             <img src="./images/section 10-1.avif" alt="">
                         </div>
-
                     </div>
-                    <div class="flex justify-center items-center">
+
+                    <!-- Client 2 -->
+                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="300">
                         <div class="flex gap-2">
                             <img src="./images/section 10-2.avif" alt="">
                         </div>
                     </div>
-                    <div class="flex justify-center items-center">
+
+                    <!-- Client 3 -->
+                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="400">
                         <div class="flex gap-2">
                             <img src="./images/section 10-3.png" alt="">
-
                         </div>
                     </div>
-                    <div class="flex justify-center items-center">
+
+                    <!-- Client 4 -->
+                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="500">
                         <div class="flex gap-2">
                             <img src="./images/section 10-4.avif" alt="">
-
                         </div>
                     </div>
-                    <div class="flex justify-center items-center">
+
+                    <!-- Client 5 -->
+                    <div class="flex justify-center items-center" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="600">
                         <div class="flex gap-2">
                             <img src="./images/section 10-5.avif" alt="">
-
                         </div>
                     </div>
 
                 </div>
+
+                <!-- Additional Information Section -->
                 <div class="text-center mt-3">
-                    <h4 class="text-2xl font-medium text-secend">Add More..</h4>
-                    <a href="#"
-                        class="text-primary hover:text-secend duration-500 tracking-wide  font-bold uppercase md:text-2xl text-xl text-center mb-5">see
-                        the list</a>
+                    <h4 class="text-2xl font-medium text-secend" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="300">
+                        Add More..
+                    </h4>
+                    <a href="services.html#ourclients"
+                        class="text-primary hover:text-secend duration-500 tracking-wide font-bold uppercase md:text-2xl text-xl text-center mb-5"
+                        data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+                        See the list
+                    </a>
                 </div>
             </div>
+
         </div>
 
         <div id="custom-alert"
@@ -924,7 +997,11 @@
             </g>
         </svg>
     </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
+        AOS.init();
+
         function toggleMenu() {
             const mobileMenu = document.getElementById("mobile-menu");
             const navLinks = document.getElementById("nav-links");

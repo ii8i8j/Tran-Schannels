@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -58,8 +60,8 @@
 
             <!-- Navigation -->
             <nav class=" items-center space-x-6 hidden md:flex" id="nav-links">
-                <a href="https://www.transchannels.com/_files/ugd/23e411_71ca618b79f74496905531710735d826.pdf"
-                    target="_blank" class="bg-[#074151] text-white px-4 py-2 rounded-lg ">
+                <a href="./images/Tcc Profile new Design R02.pdf" target="_blank"
+                    class="bg-[#074151] text-white px-4 py-2 rounded-lg " download>
                     Our Profile
                 </a>
                 <a href="./index.html" class=" text-primary hover:text-secend   font-medium">Home</a>
@@ -88,7 +90,8 @@
 
         <div class="bg-gray-300 h-40 max-w-6xl mx-auto text-center flex items-center justify-center"
             style="background-image: url('./images/project1.avif');">
-            <h1 class=" text-4xl font-medium  " style="background-color: rgb(186,143,98); color: rgb(9,46,76);">
+            <h1 class=" text-4xl font-medium  " style="background-color: rgb(186,143,98); color: rgb(9,46,76);"
+                data-aos="fade-down" data-aos-duration="1000">
                 Completed
                 Projects
             </h1>
@@ -97,21 +100,6 @@
 
         <div class="grid max-w-4xl w-[95%] mx-auto md:mt-20 mt-10 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 lg:grid-cols-4 gap-5"
             id="projectGrid">
-            <!-- <div class="border-4  border-solid " style="border-color: rgb(169, 57, 22);">
-                <div class="h-40 w-full condivimage relative overflow-hidden">
-                    <img src="./images/builder.avif" class="w-full h-full duration-300 object-cover" alt="">
-                    <div
-                        class="absolute to  p-0 left-0 px-5 opacity-0 duration-300 bg-black/20 flex items-end w-full h-full">
-                        <div class="flex w-full justify-between">
-                            <h1>dcd</h1>
-                            <h1>dcd</h1>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h1>ssc</h1>
-                </div>
-            </div> -->
         </div>
 
         <div id="custom-alert"
@@ -350,7 +338,10 @@
             </g>
         </svg>
     </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
+        AOS.init();
 
         const projects = [
             {
@@ -471,6 +462,9 @@
         projects.forEach((project, index) => {
             const projectCard = document.createElement('div');
             projectCard.classList.add('border-[3px]', 'border-solid', 'overflow-hidden');
+            projectCard.setAttribute('data-aos', 'fade-up');
+            projectCard.setAttribute('data-aos-duration', '1000');
+            projectCard.setAttribute('data-aos-delay', `${index % 4 * 100}`);
             projectCard.style.borderColor = "rgb(169, 57, 22)";
             projectCard.innerHTML = `
         <div class="h-40 w-full condivimage relative overflow-hidden">
