@@ -341,7 +341,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init();
 
         const projects = [
             {
@@ -635,6 +634,8 @@
         });
         window.onload = () => {
             document.getElementById('loading').remove();
+            AOS.init();
+
         }
 
     </script>

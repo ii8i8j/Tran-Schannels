@@ -457,7 +457,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        AOS.init();
         function toggleMenu() {
             const mobileMenu = document.getElementById("mobile-menu");
             const navLinks = document.getElementById("nav-links");
@@ -479,6 +478,8 @@
         });
         window.onload = () => {
             document.getElementById('loading').remove();
+            AOS.init();
+
         }
 
     </script>
