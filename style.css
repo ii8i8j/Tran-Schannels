@@ -107,6 +107,6 @@ scale: 1.1;
     }
 }
 
-body{
-    overflow-x: hidden;
-}
+html,
+body {
+    overflow-x: hidden; }
