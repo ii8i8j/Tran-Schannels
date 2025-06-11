@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="!w-screen">
+<body class="!w-screen overflow-y-hidden">
     <header class="bg-white shadow-md fixed top-0 right-0 z-50 w-screen">
         <div class="max-w-7xl mx-auto px-4  flex items-center justify-between">
             <!-- Logo -->
@@ -1164,6 +1164,7 @@
         window.onload = () => {
             document.getElementById("mainimage").classList.add("reveal-box")
             document.getElementById('loading').remove();
+            document.body.classList.remove('overflow-y-hidden')
             AOS.init();
 
         }

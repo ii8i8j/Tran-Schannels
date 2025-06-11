@@ -9,7 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="overflow-y-hidden">
     <header class="bg-white shadow-md fixed top-0 right-0 z-50 w-screen">
         <div class="max-w-7xl mx-auto px-4  flex items-center justify-between">
             <!-- Logo -->
@@ -434,6 +434,7 @@
             }
         });
         window.onload = () => {
+            document.body.classList.remove('overflow-y-hidden')
             document.getElementById('loading').remove();
             AOS.init();
 
